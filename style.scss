@@ -1,6 +1,11 @@
-@import "variables";
+@import "./assets/css/variables";
+@mixin sizes($width, $height) {
+  height: $height;
+  width: $width;
+}
 
 /* *=TODO */
+
 * {
   margin: 0px;
   padding: 0px;
@@ -8,15 +13,15 @@
 
 /* UBICACION DEL LOGO, APLICA EN TODOS LOS HTML. HEADER*/
 /* UBICACION DEL FORMULARIO, APLICA EN TODOS LOS HTML. HEADER*/
-.container-form {
-  display: flex;
-  justify-content: center;
-}
-
 /* MARGEN DEL CONTAINER, APLICA EN TODOS LOS HTML */
 .container {
   margin-left: 35px;
   margin-top: 35px;
+}
+
+.container-form {
+  display: flex;
+  justify-content: center;
 }
 
 a {
@@ -55,14 +60,14 @@ header {
       padding-right: 10px;
       text-decoration: none;
       color: white;
-    }
-    a:hover {
-      color: $color-ahover;
-    }
-    a:visited {
-      /*Todos los elementos <a> que tengan un atributo href definido y ya hayan sido
-       visitados, APLICA EN INDEX-PROMOCIONES-DESTACADO*/
-      background-color: rgba(255, 255, 255, 0.836);
+
+      &:hover {
+        color: $color-ahover;
+      }
+
+      &:visited {
+        background-color: rgba(255, 255, 255, 0.836);
+      }
     }
   }
 }
@@ -73,30 +78,30 @@ header {
   flex-direction: column;
   align-items: center;
 
-  /* index */
-  .banner-1 {
+  .banner {
     margin-top: 10px;
     padding: 10px;
     display: grid;
     grid-row: 1;
+    width: 95%;
+    height: 370px;
+  }
+  /* index */
+  .banner-1 {
+    @extend .banner;
     grid-column: 1;
+    height: 350px;
   }
 
   /* index */
   .banner-2 {
-    margin-top: 10px;
-    padding: 10px;
-    display: grid;
-    grid-row: 1;
+    @extend .banner;
     grid-column: 2;
   }
 
   /* index */
   .banner-3 {
-    margin-top: 10px;
-    padding: 10px;
-    display: grid;
-    grid-row: 1;
+    @extend .banner;
     grid-column: 3;
   }
 
@@ -151,6 +156,10 @@ header {
   }
 }
 
+.camisetas-p {
+  width: 300px;
+  height: 300px;
+}
 /* destacado */
 
 /* nosotros */
@@ -273,4 +282,8 @@ input[type="search"] {
     width: 100%;
     display: inline-block;
   }
+}
+
+.lupa {
+  @include sizes(20px, 20px);
 }

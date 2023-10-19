@@ -7,15 +7,15 @@
 
 /* UBICACION DEL LOGO, APLICA EN TODOS LOS HTML. HEADER*/
 /* UBICACION DEL FORMULARIO, APLICA EN TODOS LOS HTML. HEADER*/
-.container-form {
-  display: flex;
-  justify-content: center;
-}
-
 /* MARGEN DEL CONTAINER, APLICA EN TODOS LOS HTML */
 .container {
   margin-left: 35px;
   margin-top: 35px;
+}
+
+.container-form {
+  display: flex;
+  justify-content: center;
 }
 
 a {
@@ -57,8 +57,6 @@ header nav a:hover {
   color: gray;
 }
 header nav a:visited {
-  /*Todos los elementos <a> que tengan un atributo href definido y ya hayan sido
-   visitados, APLICA EN INDEX-PROMOCIONES-DESTACADO*/
   background-color: rgba(255, 255, 255, 0.836);
 }
 
@@ -74,25 +72,22 @@ header nav a:visited {
   /* index */
   /* index */
 }
-.containerImg .banner-1 {
+.containerImg .banner, .containerImg .banner-3, .containerImg .banner-2, .containerImg .banner-1 {
   margin-top: 10px;
   padding: 10px;
   display: grid;
   grid-row: 1;
+  width: 95%;
+  height: 370px;
+}
+.containerImg .banner-1 {
   grid-column: 1;
+  height: 350px;
 }
 .containerImg .banner-2 {
-  margin-top: 10px;
-  padding: 10px;
-  display: grid;
-  grid-row: 1;
   grid-column: 2;
 }
 .containerImg .banner-3 {
-  margin-top: 10px;
-  padding: 10px;
-  display: grid;
-  grid-row: 1;
   grid-column: 3;
 }
 .containerImg .titulo-banner1 {
@@ -136,6 +131,11 @@ header nav a:visited {
   display: block;
   border: groove;
   color: #34495e;
+}
+
+.camisetas-p {
+  width: 300px;
+  height: 300px;
 }
 
 /* destacado */
@@ -250,6 +250,10 @@ input[type=search] {
     width: 100%;
     display: inline-block;
   }
+}
+.lupa {
+  height: 20px;
+  width: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
