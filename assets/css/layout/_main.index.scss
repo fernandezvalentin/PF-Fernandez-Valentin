@@ -1,0 +1,52 @@
+/* CONTENEDOR IMG INDEX */
+.containerImg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .banner {
+    margin-top: 10px;
+    padding: 10px;
+    display: grid;
+    grid-row: 1;
+    width: 100%;
+    height: 400px;
+  }
+  /* index */
+  .banner-1 {
+    @extend .banner;
+    grid-column: 1;
+  }
+
+  /* index */
+  .banner-2 {
+    @extend .banner;
+    grid-column: 2;
+    height: 600px;
+  }
+
+  /* index */
+  .banner-3 {
+    @extend .banner;
+    grid-column: 3;
+  }
+
+  /* index */
+  .titulo-banner1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    text-align: center;
+  }
+
+  /* index */
+  .titulo-banner2 {
+    @extend .titulo-banner1;
+  }
+
+  /* index */
+  .titulo-banner3 {
+    @extend .titulo-banner1;
+  }
+}

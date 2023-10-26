@@ -1,0 +1,32 @@
+/* footer. APLICA EN TODOS LOS HTML*/
+
+.footer {
+  padding: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-areas: "inicio promociones destacado nosotros contacto";
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  background-color: #c6cccc;
+
+  .redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+
+    a {
+      margin-left: 10px;
+      /* Opcional: Agrega margen izquierdo entre los íconos */
+    }
+    form {
+      display: flex;
+      align-items: center;
+    }
+
+    /* APLICA EN TODOS LOS HTML */
+    label {
+      margin-right: 10px;
+    }
+  }
+}

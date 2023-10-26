@@ -1,0 +1,29 @@
+@import "./layout/variables";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/mixins";
+@import "./layout/main.index";
+@import "./layout/main.promociones";
+@import "./layout/main.nosotros";
+@import "./layout/main.contacto";
+
+/* *=TODO */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* destacado */
+
+/* UBICACION DEL FORMULARIO. APLICA EN TODOS LOS HTML */
+
+/*--------------MEDIA QUERIES--------------*/
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}

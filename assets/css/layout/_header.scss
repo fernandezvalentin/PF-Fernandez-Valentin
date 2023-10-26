@@ -1,0 +1,65 @@
+/* ENCABEZADO. APLICA EN TODOS LOS HTML*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: $color-header;
+  color: white;
+
+  .nav-logo img {
+    height: 80px;
+  }
+
+  nav {
+    ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+      /* Centra el contenido horizontalmente */
+    }
+    li {
+      display: inline-block;
+      /* Muestra los elementos de lista en línea */
+      margin: 0px;
+      /* Espaciado horizontal entre elementos de lista */
+    }
+    a {
+      font-weight: 600;
+      padding-right: 10px;
+      text-decoration: none;
+      color: white;
+
+      &:hover {
+        color: $color-ahover;
+      }
+
+      &:visited {
+        background-color: rgba(255, 255, 255, 0.836);
+      }
+    }
+  }
+}
+
+/* Ajusta el ancho según tus necesidades */
+input[type="search"] {
+  width: 140px;
+}
+
+/* UBICACION DEL LOGO, APLICA EN TODOS LOS HTML. HEADER*/
+/* UBICACION DEL FORMULARIO, APLICA EN TODOS LOS HTML. HEADER*/
+/* MARGEN DEL CONTAINER, APLICA EN TODOS LOS HTML */
+.container {
+  margin-left: 35px;
+  margin-top: 35px;
+}
+
+.container-form {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(15, 27, 190);
+}
