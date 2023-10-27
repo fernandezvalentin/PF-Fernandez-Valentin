@@ -9,24 +9,52 @@
   justify-content: space-around;
   background-color: #c6cccc;
 
+  // Redes sociales - Footer
+
   .redes-sociales {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     margin-right: 10px;
 
     a {
       margin-left: 10px;
       /* Opcional: Agrega margen izquierdo entre los íconos */
     }
-    form {
-      display: flex;
-      align-items: center;
-    }
 
     /* APLICA EN TODOS LOS HTML */
     label {
       margin-right: 10px;
     }
+    // Fomulario - Footer
+  }
+
+  // Email: -Footer
+  .form-label {
+    display: flex;
+    padding: 5px;
+    margin-right: 5px;
+    font-weight: bolder;
+  }
+
+  .form-control {
+    width: 80%;
+    margin-right: 5px;
+  }
+
+  // Formulario entero
+  .email {
+    display: inline-flex;
+    text-align: center;
+  }
+}
+// Descripción de abajo del form
+.form-text {
+  margin-left: 7px;
+}
+
+@media screen and (max-width: 655px) {
+  .footer {
+    display: inline-block;
   }
 }

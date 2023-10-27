@@ -12,7 +12,7 @@
       content="FUTBOL, CAMISETAS, SHORTS, BOCA, RIVER, ARGENTINA"
     />
     <title>Fútbol Store/Inicio</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -53,7 +53,7 @@
             <button type="submit">
               <img
                 class="lupa img-fluid"
-                src="../assets/img/lupa-buscador.png"
+                src="./assets/img/lupa-buscador.png"
                 alt="Buscar"
               />
             </button>
@@ -145,8 +145,8 @@
         </ul>
       </div>
 
-      <form>
-        <div class="mb-3">
+      <form class="mb-3">
+        <div class="email">
           <label for="exampleInputEmail1" class="form-label">Email</label>
           <input
             type="email"
@@ -154,12 +154,11 @@
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
           />
-          <div id="emailHelp" class="form-text">
-            Ingresá tu email para recibir nuestras últimas novedades y
-            promociones
-          </div>
+          <button type="submit" class="btn btn-primary">Suscribite</button>
         </div>
-        <button type="submit" class="btn btn-primary">Suscribite</button>
+        <div id="emailHelp" class="form-text">
+          Ingresá tu email para recibir nuestras últimas novedades y promociones
+        </div>
       </form>
 
       <div class="redes-sociales">
@@ -174,7 +173,7 @@
         /></a>
       </div>
 
-      <div class="copy">Fútbol Store Web &copy; 2023</div>
+      <div>Fútbol Store Web &copy; 2023</div>
     </footer>
 
     <!-- FIN DE FOOTER -->
